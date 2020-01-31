@@ -6,7 +6,8 @@
         xmlns:vm="clr-namespace:WPF.Sample.ViewModelLayer;assembly=WPF.Sample.ViewModelLayer"
         mc:Ignorable="d"
         Title="Sample WPF Application"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
     <Window.Resources>
         <vm:MainWindowViewModel x:Key="viewModel"
                             InfoMessageTitle="Please wait..."

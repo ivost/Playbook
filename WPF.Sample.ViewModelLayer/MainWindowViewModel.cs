@@ -1,4 +1,10 @@
 ﻿using Common.Library;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+using System.Windows.Threading;
+using System.Windows;
+
 
 namespace WPF.Sample.ViewModelLayer
 {
@@ -60,6 +66,13 @@ namespace WPF.Sample.ViewModelLayer
             }
         }
 
+        private AppLayer.Service _service = new AppLayer.Service();
+
+        public void ClearInfoMessage()
+        {
+            StatusMessage = "Ready";
+            IsInfoMessageVisible = false;
+        }
 
     }
 }
